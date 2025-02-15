@@ -14,7 +14,7 @@
 		BE6A7D392D4B0B1300BA6C94 /* Exceptions for "RGBPicker" folder in "RGBPicker" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				App/Info.plist,
 			);
 			target = BE6A7D262D4B0B1200BA6C94 /* RGBPicker */;
 		};
@@ -90,6 +90,10 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					red,
+					redSlider,
+				);
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
@@ -147,7 +151,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VBV72WF24P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RGBPicker/Info.plist;
+				INFOPLIST_FILE = RGBPicker/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -179,7 +183,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VBV72WF24P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RGBPicker/Info.plist;
+				INFOPLIST_FILE = RGBPicker/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
