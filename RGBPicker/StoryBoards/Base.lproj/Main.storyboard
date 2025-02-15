@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bYY-hU-Gza">
-    <device id="retina6_3" orientation="portrait" appearance="light"/>
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,21 +13,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ColorPickerViewController" customModule="RGBPicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="HjM-y5-tXd">
-                                <rect key="frame" x="16" y="20" width="361" height="360"/>
+                                <rect key="frame" x="16" y="20" width="408" height="360"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFa-Ps-YJl">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="155"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="408" height="155"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="155" id="YX4-fO-H3L"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mgF-nF-oZU">
-                                        <rect key="frame" x="0.0" y="205" width="361" height="155"/>
+                                        <rect key="frame" x="0.0" y="205" width="408" height="155"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HYp-KT-mnR">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="155"/>
@@ -82,22 +82,22 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LyB-i4-YNa">
-                                                <rect key="frame" x="140" y="0.0" width="166" height="155"/>
+                                                <rect key="frame" x="140" y="0.0" width="213" height="155"/>
                                                 <subviews>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="F70-pS-S8a">
-                                                        <rect key="frame" x="-2" y="0.0" width="170" height="52.666666666666664"/>
+                                                        <rect key="frame" x="-2" y="0.0" width="217" height="52.666666666666664"/>
                                                         <connections>
                                                             <action selector="sliderValueChangedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="1KA-bA-LN4"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="eRg-Hm-Y1N">
-                                                        <rect key="frame" x="-2" y="51.666666666666686" width="170" height="52.666666666666657"/>
+                                                        <rect key="frame" x="-2" y="51.666666666666686" width="217" height="52.666666666666657"/>
                                                         <connections>
                                                             <action selector="sliderValueChangedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="lVD-yM-LdX"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gc5-sB-JXH">
-                                                        <rect key="frame" x="-2" y="103.33333333333333" width="170" height="52.666666666666671"/>
+                                                        <rect key="frame" x="-2" y="103.33333333333333" width="217" height="52.666666666666671"/>
                                                         <connections>
                                                             <action selector="sliderValueChangedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="HS2-YL-m0f"/>
                                                         </connections>
@@ -105,7 +105,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GkE-ch-fh7">
-                                                <rect key="frame" x="316" y="0.0" width="45" height="155"/>
+                                                <rect key="frame" x="363" y="0.0" width="45" height="155"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ich-s6-pEC">
                                                         <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -142,7 +142,10 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3p-9f-MQm">
-                                <rect key="frame" x="164.33333333333334" y="430" width="64.333333333333343" height="443"/>
+                                <rect key="frame" x="188" y="890" width="64.333333333333314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AYf-3k-mEL"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Done"/>
@@ -156,12 +159,10 @@
                         <color key="backgroundColor" red="0.11460200700000001" green="0.2879535258" blue="0.58575820919999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="HjM-y5-tXd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4Pj-Kv-PMh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x3p-9f-MQm" secondAttribute="bottom" constant="16" id="7g7-Js-u28"/>
                             <constraint firstItem="HjM-y5-tXd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GCg-i7-m1f"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x3p-9f-MQm" secondAttribute="bottom" constant="1" id="HCk-uv-IhZ"/>
-                            <constraint firstItem="HjM-y5-tXd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.918575" id="Lau-Mi-sAP"/>
                             <constraint firstItem="x3p-9f-MQm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OLe-oi-hmN"/>
                             <constraint firstItem="HjM-y5-tXd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="l0Y-Sr-K1Q"/>
-                            <constraint firstItem="x3p-9f-MQm" firstAttribute="top" secondItem="HjM-y5-tXd" secondAttribute="bottom" constant="50" id="peE-fE-ZZ8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HjM-y5-tXd" secondAttribute="trailing" constant="16" id="xwH-z7-9ao"/>
                         </constraints>
                     </view>
@@ -190,7 +191,7 @@
             <objects>
                 <viewController id="DLk-h5-xtA" customClass="MainViewController" customModule="RGBPicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gYz-Ad-EcF">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Ij6-36-O0E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -213,7 +214,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bYY-hU-Gza" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="frF-zB-s6z">
-                        <rect key="frame" x="0.0" y="62" width="402" height="44"/>
+                        <rect key="frame" x="0.0" y="62" width="440" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
