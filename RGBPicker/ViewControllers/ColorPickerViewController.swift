@@ -73,7 +73,7 @@ final class ColorPickerViewController: UIViewController {
     @IBAction func changedTextFieldAction(_ sender: UITextField) {
         guard let colorIndex = ColorsIndexes(rawValue: sender.tag) else { return }
         
-        if let value = Float(sender.text!.replacingOccurrences(of: ",", with: ".")), value >= 0.0, value <= 1.0 {
+        if let value = Float(sender.text!.replacingOccurrences(of: ",", with: ".")), (0...1).contains(value) {
             sender.text = value.formattedValue // For cases when keyboard decimal splitter is ',' and value > 4
             colorSliders[colorIndex.index].setValue(Float(value.formattedValue)!, animated: true)
             colorValueLabels[colorIndex.index].text = value.formattedValue
@@ -126,20 +126,6 @@ extension ColorPickerViewController {
     }
 }
 
-// MARK: Formatted property for round value to 2 symbols after dot
-extension Float {
-    var formattedValue: String {
-        String(format: "%.2f", self)
-    }
-}
-
-extension String {
-    var formattedValue: String {
-        String(format: "%.2f", self)
-    }
-}
-
-
 // MARK: Keyboard custom
 extension ColorPickerViewController {
     func customKeyboard(to textField: UITextField) {
@@ -175,5 +161,19 @@ extension ColorPickerViewController {
         let okAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
+    }
+}
+
+
+// MARK: Formatted property for round value to 2 symbols after dot
+extension Float {
+    var formattedValue: String {
+        String(format: "%.2f", self)
+    }
+}
+
+extension String {
+    var formattedValue: String {
+        String(format: "%.2f", self)
     }
 }
