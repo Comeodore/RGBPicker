@@ -79,7 +79,7 @@ final class ColorPickerViewController: UIViewController {
             colorValueLabels[colorIndex.index].text = value.formattedValue
             setPickedColorView()
         } else {
-            showErrorAlert()
+            showErrorAlert(textField: sender)
             sender.text = colorValueLabels[colorIndex.index].text
         }
     }
@@ -156,9 +156,11 @@ extension ColorPickerViewController {
         ).uiColor
     }
     
-    private func showErrorAlert() {
+    private func showErrorAlert(textField: UITextField) {
         let alert = UIAlertController(title: "Wrong format", message: "Value can be between 0.00 and 1.00, try again", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            textField.becomeFirstResponder()
+        }
         alert.addAction(okAction)
         present(alert, animated: true)
     }
